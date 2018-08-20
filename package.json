@@ -11,17 +11,14 @@
   "lint-staged": {
     "config/webpack/**/*.js": [
       "prettier --write",
-      "eslint",
       "git add"
     ],
     "frontend/**/*.js": [
       "prettier --write",
-      "eslint",
       "git add"
     ],
     "frontend/**/*.css": [
       "prettier --write",
-      "stylelint --fix",
       "git add"
     ]
   },
