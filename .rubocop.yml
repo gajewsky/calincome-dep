@@ -1,0 +1,54 @@
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  TargetRubyVersion: 2.5
+  Exclude:
+    - bin/**/*
+    - db/**/*
+    - .gemspec/**/*
+    - .bundle/**/*
+    - vendor/**/*
+    - config/**/*
+
+    - spec/**/*
+
+  Include:
+    - '**/gems.rb'
+    - '**/Rakefile'
+    - '**/config.ru'
+    - lib/tasks/**/*.rake
+    - lib/tasks/**/*.rb
+
+Metrics/ClassLength:
+  CountComments: false
+  Max: 200
+Metrics/LineLength:
+  Max: 99
+Metrics/MethodLength:
+  CountComments: false
+  Max: 15
+Metrics/AbcSize:
+  Max: 25
+Style/Lambda:
+  EnforcedStyle: literal
+
+AlignParameters:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false
+Gemspec/OrderedDependencies:
+  Enabled: false
+Layout/MultilineOperationIndentation:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+Lint/AmbiguousOperator:
+  Enabled: false
+Style/Alias:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
