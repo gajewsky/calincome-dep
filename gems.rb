@@ -15,6 +15,7 @@ gem 'slim-rails'
 gem 'webpacker'
 
 group :development, :test do
+  gem 'listen'
   gem 'pry'
   gem 'rubocop'
   gem 'slim_lint'
