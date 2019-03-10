@@ -11,6 +11,7 @@ gem 'slim-rails'
 gem 'webpacker'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'komponent'
 
 group :development, :test do
   gem 'rspec-rails'
