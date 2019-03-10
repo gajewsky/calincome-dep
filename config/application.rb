@@ -19,10 +19,14 @@ module Calincome
     config.load_defaults 5.2
     config.komponent.stylesheet_engine = :scss
 
-    config.generators do |g|
-      g.system_tests = nil
-      g.komponent stimulus: true
-      g.template_engine = :slim
+    config.generators do |generate|
+      generate.system_tests = nil
+      generate.komponent stimulus: true
+      generate.template_engine = :slim
+      generate.helper false
+      generate.test false
+      generate.assets false
+      generate.view_specs false
     end
   end
 end

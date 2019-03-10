@@ -1,2 +1,2 @@
 import 'components';
-import 'stylesheets/application'
+import '../styles/application'
